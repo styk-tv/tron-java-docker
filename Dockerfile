@@ -11,3 +11,4 @@ WORKDIR /home/java-tron
 
 RUN ./gradlew lint
 RUN ./gradlew test
+RUN ./gradlew build

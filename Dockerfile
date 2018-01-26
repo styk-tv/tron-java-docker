@@ -1,9 +1,8 @@
-FROM tronprotocol/centos7-jdk8
+FROM mlaccetti/docker-oracle-java8-ubuntu-16.04
 MAINTAINER polfilm
 
 # Install dependencies && Download java-tron
-RUN yum -y update
-RUN yum install -y git
+RUN apt-get install git -y
 RUN git clone -b develop https://github.com/tronprotocol/java-tron.git /home/java-tron
 
 # Change work directory

@@ -9,6 +9,8 @@ RUN git clone -b develop https://github.com/tronprotocol/java-tron.git /home/jav
 # Change work directory
 WORKDIR /home/java-tron
 
-RUN ./gradlew lint
-RUN ./gradlew test
-RUN ./gradlew build
+# RUN ./gradlew lint
+# RUN ./gradlew test
+# RUN ./gradlew build
+RUN ./gradlew clean shadowJar
+

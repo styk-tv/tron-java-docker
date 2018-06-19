@@ -5,6 +5,7 @@ MAINTAINER polfilm
 RUN apt-get update
 RUN apt-get install git -y
 RUN git clone -b develop https://github.com/tronprotocol/java-tron.git /home/java-tron \
+    && cd /home/java-tron \
     && git fetch \
     && git fetch --tags \
     && git checkout Odyssey-v2.0.1
